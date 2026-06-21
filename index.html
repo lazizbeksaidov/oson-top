@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="O'zbekistondagi eng foydali rasmiy va xususiy saytlar katalogi — davlat xizmatlari, qonunchilik, soliq, transport, ta'lim, bank, tibbiyot va kommunal xizmatlar. Bitta joyda, qulay qidiruv bilan.">
+<meta name="theme-color" content="#07080c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230099B5'/%3E%3Cg fill='%23ffffff'%3E%3Crect x='4' y='4' width='7' height='7' rx='2'/%3E%3Crect x='13' y='4' width='7' height='7' rx='2' opacity='.82'/%3E%3Crect x='4' y='13' width='7' height='7' rx='2' opacity='.82'/%3E%3Crect x='13' y='13' width='7' height='7' rx='2' opacity='.62'/%3E%3C/g%3E%3C/svg%3E">
+<title>Foydali saytlar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>(function(){try{var t=localStorage.getItem('fs-theme');if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+<style>
+  :root, [data-theme="dark"]{
+    --bg:#07080c; --bg-soft:#0c0e15;
+    --surface:rgba(255,255,255,.035); --surface-2:rgba(255,255,255,.06); --surface-solid:#11131c;
+    --text:#eef1f8; --text-2:#9aa3bd; --text-3:#646d86;
+    --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.16);
+    --glass:rgba(12,14,21,.7);
+    --grad:linear-gradient(100deg, #0099B5 0%, #12b39a 52%, #1EB53A 100%);
+    --shadow:0 24px 60px -20px rgba(0,0,0,.7);
+    --grain:.05;
+  }
+  [data-theme="light"]{
+    --bg:#f4f6fc; --bg-soft:#ffffff;
+    --surface:#ffffff; --surface-2:#eef1f8; --surface-solid:#ffffff;
+    --text:#0d1424; --text-2:#525d77; --text-3:#8b94a9;
+    --line:rgba(13,20,36,.1); --line-2:rgba(13,20,36,.18);
+    --glass:rgba(255,255,255,.78);
+    --grad:linear-gradient(100deg, #0099B5 0%, #12b39a 52%, #1EB53A 100%);
+    --shadow:0 24px 50px -24px rgba(20,30,60,.28);
+    --grain:.025;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.55; overflow-x:hidden;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  body::before{
+    content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
+    background:
+      radial-gradient(900px 520px at 50% -8%, rgba(91,140,255,.18), transparent 70%),
+      radial-gradient(700px 480px at 88% 4%, rgba(34,211,238,.12), transparent 70%),
+      radial-gradient(700px 520px at 6% 10%, rgba(167,139,250,.12), transparent 72%);
+  }
+  .grain{
+    position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:var(--grain);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  ::selection{background:rgba(91,140,255,.32); color:#fff}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 22px}
+  h1,h2,h3{font-family:'Space Grotesk','Inter',sans-serif; letter-spacing:-.02em; margin:0}
+  ::-webkit-scrollbar{width:11px;height:11px}
+  ::-webkit-scrollbar-thumb{background:var(--line-2); border-radius:99px; border:3px solid transparent; background-clip:padding-box}
+  ::-webkit-scrollbar-thumb:hover{background:var(--text-3); background-clip:padding-box}
+
+  /* ===== Nav ===== */
+  .nav{position:sticky; top:0; z-index:60; border-bottom:1px solid var(--line);
+    background:var(--glass); backdrop-filter:blur(20px) saturate(180%); -webkit-backdrop-filter:blur(20px) saturate(180%)}
+  .nav-in{display:flex; align-items:center; height:66px; gap:14px}
+  .brand{display:flex; align-items:center; gap:12px}
+  .brand-mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-size:20px;
+    background:var(--grad); box-shadow:0 6px 18px -4px rgba(91,140,255,.6)}
+  .brand-text{font-family:'Space Grotesk'; font-weight:700; font-size:18px; letter-spacing:-.02em; line-height:1}
+  .brand-text span{color:var(--text-2); font-weight:500}
+  .brand-text small{display:block; font-family:'Inter'; font-weight:400; font-size:11px; color:var(--text-3); letter-spacing:.02em; margin-top:2px}
+  .spacer{flex:1}
+  .icon-btn{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:var(--surface);
+    color:var(--text);cursor:pointer;font-size:17px;display:grid;place-items:center;transition:.18s; font-family:inherit}
+  .icon-btn:hover{border-color:var(--line-2); transform:translateY(-1px)}
+  .icon-btn:active{transform:scale(.92)}
+
+  /* ============ HERO — "Yulduz maydoni" (aurora identity + signal rail) ============ */
+  /* Drop-in token safety: fall back gracefully if host tokens are missing */
+.hero{
+  --accent-sky:#0099B5;
+  --accent-green:#1EB53A;
+  --accent-red:#CE1126;
+}
+@supports not (color: var(--grad)){
+  .hero{ --grad:linear-gradient(100deg,#0099B5 0%,#12b39a 52%,#1EB53A 100%); }
+}
+
+.hero{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  padding:clamp(84px,12vw,144px) clamp(20px,5vw,40px) clamp(60px,8vw,100px);
+  min-height:min(92vh,820px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-bottom:1px solid var(--line,rgba(255,255,255,.08));
+}
+
+/* ---- atmosphere layer ---- */
+.hero-aurora{
+  position:absolute; inset:0; z-index:-2;
+  background:var(--bg,#0a0b0e);
+  pointer-events:none;
+}
+.hero-mesh,.hero-stars{ position:absolute; inset:0; width:100%; height:100%; }
+.hero-mesh{ z-index:1; opacity:.95; }
+.hero-stars{ z-index:2; opacity:.75; }
+
+/* soft drifting flag-color blobs — the real "mesh" motion; red held as warmth */
+.blob{
+  position:absolute; border-radius:50%;
+  filter:blur(72px); opacity:.55;
+  will-change:transform;
+}
+.blob-blue{ width:46vw; height:46vw; max-width:640px; max-height:640px;
+  left:-8vw; top:-12vw; background:var(--accent-sky); animation:drift1 26s ease-in-out infinite; }
+.blob-green{ width:42vw; height:42vw; max-width:580px; max-height:580px;
+  right:-10vw; top:-8vw; background:var(--accent-green); opacity:.42; animation:drift2 30s ease-in-out infinite; }
+.blob-white{ width:34vw; height:34vw; max-width:460px; max-height:460px;
+  left:32%; top:38%; background:#FFFFFF; opacity:.20; animation:drift3 34s ease-in-out infinite; }
+.blob-red{ width:30vw; height:30vw; max-width:420px; max-height:420px;
+  right:18%; bottom:-12vw; background:var(--accent-red); opacity:.15; animation:drift4 38s ease-in-out infinite; }
+
+/* faint editorial grid */
+.hero-grid{
+  position:absolute; inset:0; z-index:0;
+  background-image:
+    linear-gradient(to right, var(--line,rgba(255,255,255,.08)) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line,rgba(255,255,255,.08)) 1px, transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 42%, #000 0%, transparent 78%);
+  mask-image:radial-gradient(ellipse 70% 60% at 50% 42%, #000 0%, transparent 78%);
+  opacity:.5;
+}
+
+/* contrast scrim so the search field reads as the center of gravity */
+.hero-scrim{
+  position:absolute; inset:0; z-index:2; pointer-events:none;
+  background:radial-gradient(ellipse 56% 48% at 50% 52%,
+    color-mix(in srgb, var(--bg,#0a0b0e) 62%, transparent) 0%,
+    transparent 70%);
+}
+
+@keyframes drift1{ 0%,100%{transform:translate3d(0,0,0) scale(1)} 50%{transform:translate3d(8%,6%,0) scale(1.12)} }
+@keyframes drift2{ 0%,100%{transform:translate3d(0,0,0) scale(1.05)} 50%{transform:translate3d(-7%,9%,0) scale(.92)} }
+@keyframes drift3{ 0%,100%{transform:translate3d(0,0,0) scale(1)} 50%{transform:translate3d(-6%,-8%,0) scale(1.15)} }
+@keyframes drift4{ 0%,100%{transform:translate3d(0,0,0) scale(1)} 50%{transform:translate3d(6%,-7%,0) scale(1.1)} }
+
+/* 12-star constellation (3-4-5 loose grouping) — felt, never drawn as a flag */
+.star-field use{ fill:#FFFFFF; transform-box:fill-box; transform-origin:center; }
+.st.s1{ animation:tw 4.6s ease-in-out infinite; }
+.st.s2{ animation:tw 6s ease-in-out infinite .8s; fill:color-mix(in srgb, var(--accent-sky) 70%, #fff); }
+.st.s3{ animation:tw 5.2s ease-in-out infinite 1.6s; fill:color-mix(in srgb, var(--accent-green) 70%, #fff); }
+@keyframes tw{ 0%,100%{opacity:.22; transform:scale(.7)} 50%{opacity:.92; transform:scale(1.12)} }
+
+/* light theme: lift base, soften atmosphere so text stays crisp */
+[data-theme="light"] .hero-aurora{ background:var(--bg,#fff); }
+[data-theme="light"] .blob{ filter:blur(84px); }
+[data-theme="light"] .blob-blue{ opacity:.30; }
+[data-theme="light"] .blob-green{ opacity:.26; }
+[data-theme="light"] .blob-white{ opacity:0; }
+[data-theme="light"] .blob-red{ opacity:.12; }
+[data-theme="light"] .hero-mesh{ opacity:.85; }
+[data-theme="light"] .hero-stars{ opacity:.42; }
+[data-theme="light"] .star-field use{ fill:color-mix(in srgb, var(--accent-sky) 55%, transparent); }
+[data-theme="light"] .hero-grid{ opacity:.7; }
+[data-theme="light"] .hero-scrim{
+  background:radial-gradient(ellipse 56% 48% at 50% 52%,
+    color-mix(in srgb, var(--bg,#fff) 55%, transparent) 0%, transparent 70%);
+}
+
+/* ---- content ---- */
+.hero-inner{
+  position:relative; z-index:3;
+  width:100%; max-width:920px;
+  margin:0 auto; text-align:center;
+  display:flex; flex-direction:column; align-items:center;
+}
+
+/* signal rail — anatomically faithful tricolor compressed to a hairline mark */
+.hero-rail{ display:flex; align-items:center; gap:5px; margin:0 0 18px; }
+.hero-rail i{ height:4px; border-radius:99px; display:block; }
+.hero-rail .r-blue{ width:42px; background:var(--accent-sky); }
+.hero-rail .r-red,.hero-rail .r-red2{ width:7px; background:var(--accent-red); }
+.hero-rail .r-white{ width:24px; background:color-mix(in srgb, var(--text,#fff) 42%, transparent); }
+.hero-rail .r-green{ width:34px; background:var(--accent-green); }
+
+.hero-pill{
+  display:inline-flex; align-items:center; gap:9px;
+  padding:8px 16px; border-radius:100px;
+  font:500 13px/1 'Inter',system-ui,sans-serif;
+  letter-spacing:.01em; color:var(--text-2,#aab);
+  background:var(--glass,rgba(255,255,255,.05));
+  border:1px solid var(--line-2,rgba(255,255,255,.12));
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+  box-shadow:var(--shadow,0 8px 30px rgba(0,0,0,.25));
+}
+.pill-dot{
+  width:7px; height:7px; border-radius:50%; background:var(--accent-green);
+  box-shadow:0 0 0 0 rgba(30,181,58,.55);
+  animation:pulse 2.4s ease-out infinite;
+}
+@keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(30,181,58,.5)} 70%{box-shadow:0 0 0 8px rgba(30,181,58,0)} 100%{box-shadow:0 0 0 0 rgba(30,181,58,0)} }
+.pill-sep{ width:1px; height:13px; background:var(--line-2,rgba(255,255,255,.12)); }
+#pillCount{ color:var(--text,#fff); font-weight:600; font-variant-numeric:tabular-nums; }
+#pillCount:empty::after{ content:"\2026"; color:var(--text-3,#778); font-weight:500; }
+
+.hero-title{
+  margin:24px 0 0;
+  font-family:'Space Grotesk',system-ui,sans-serif;
+  font-weight:700;
+  font-size:clamp(2.45rem,7.1vw,5.4rem);
+  line-height:1.02;
+  letter-spacing:-.035em;
+  color:var(--text,#fff);
+  text-wrap:balance;
+}
+.grad-word{
+  color:var(--accent-sky); /* solid fallback before clip */
+  background:var(--grad,linear-gradient(100deg,#0099B5,#1EB53A));
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero-title-sub{
+  display:block; margin-top:.06em;
+  font-weight:500; color:var(--text-2,#aab);
+  font-size:.6em; letter-spacing:-.02em;
+}
+
+.hero-sub{
+  margin:20px auto 0; max-width:600px;
+  font:400 clamp(1.02rem,2.1vw,1.26rem)/1.6 'Inter',system-ui,sans-serif;
+  color:var(--text-2,#aab);
+  text-wrap:balance;
+}
+
+/* ---- search ---- */
+.hero-search{
+  position:relative; z-index:1;
+  margin:36px auto 0; width:100%; max-width:680px;
+  display:flex; align-items:center;
+}
+.search-ic{
+  position:absolute; left:22px; display:grid; place-items:center;
+  color:var(--text-3,#778); pointer-events:none; z-index:2;
+  transition:color .25s;
+}
+#search:focus ~ .search-ic{ color:var(--accent-sky); }
+#search{
+  width:100%; height:68px;
+  padding:0 116px 0 60px;
+  font:400 1.08rem/1 'Inter',system-ui,sans-serif;
+  color:var(--text,#fff);
+  background:var(--surface-solid,var(--surface,rgba(20,22,28,.92)));
+  border:1px solid var(--line-2,rgba(255,255,255,.12));
+  border-radius:14px;
+  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  box-shadow:var(--shadow,0 8px 30px rgba(0,0,0,.25));
+  outline:none;
+  transition:border-color .25s, box-shadow .25s, transform .25s;
+}
+#search::placeholder{ color:var(--text-3,#778); }
+#search::-webkit-search-cancel-button{ -webkit-appearance:none; }
+#search:hover{ border-color:var(--line,rgba(255,255,255,.2)); }
+#search:focus{
+  border-color:transparent;
+  box-shadow:var(--shadow,0 8px 30px rgba(0,0,0,.25)),
+    0 0 0 2px var(--accent-sky),
+    0 0 0 6px color-mix(in srgb, var(--accent-sky) 18%, transparent);
+  transform:translateY(-1px);
+}
+.clear-s{
+  position:absolute; right:62px; top:50%; transform:translateY(-50%);
+  display:none; place-items:center;
+  width:30px; height:30px; border-radius:50%;
+  border:1px solid var(--line-2,rgba(255,255,255,.12)); background:var(--surface-2,rgba(255,255,255,.08));
+  color:var(--text-2,#aab); font-size:13px; cursor:pointer; z-index:2;
+  transition:background .2s, color .2s, transform .2s;
+}
+.clear-s:hover{ background:var(--surface-solid,rgba(40,44,54,.95)); color:var(--text,#fff); transform:translateY(-50%) scale(1.08); }
+.search-kbd{
+  position:absolute; right:20px; top:50%; transform:translateY(-50%);
+  display:grid; place-items:center;
+  min-width:26px; height:26px; padding:0 7px;
+  font:500 13px/1 'Inter',system-ui,sans-serif;
+  color:var(--text-3,#778); background:var(--surface-2,rgba(255,255,255,.08));
+  border:1px solid var(--line-2,rgba(255,255,255,.12)); border-radius:7px;
+  pointer-events:none;
+}
+
+/* ---- suggests ---- */
+.suggests{
+  margin:18px auto 0; max-width:680px;
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:center;
+  gap:9px;
+}
+.suggests-label{
+  font:500 13px/1 'Inter',system-ui,sans-serif;
+  color:var(--text-3,#778); margin-right:2px;
+}
+.suggests button{
+  padding:8px 15px; border-radius:100px;
+  font:500 13.5px/1 'Inter',system-ui,sans-serif;
+  color:var(--text-2,#aab);
+  background:var(--glass,rgba(255,255,255,.05));
+  border:1px solid var(--line-2,rgba(255,255,255,.12));
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  cursor:pointer;
+  transition:color .2s, border-color .2s, background .2s, transform .2s;
+}
+.suggests button:hover{
+  color:var(--text,#fff); transform:translateY(-2px);
+  border-color:color-mix(in srgb, var(--accent-sky) 50%, var(--line-2,rgba(255,255,255,.12)));
+  background:color-mix(in srgb, var(--accent-sky) 9%, var(--surface,rgba(255,255,255,.06)));
+}
+.suggests button:active{ transform:translateY(0); }
+
+/* ---- stats ---- */
+.hero-stats{
+  margin:50px auto 0;
+  display:flex; align-items:stretch; justify-content:center; gap:0;
+  padding:0; flex-wrap:wrap;
+}
+.hero-stats .stat{
+  position:relative;
+  padding:4px 38px;
+  display:flex; flex-direction:column; align-items:center; gap:6px;
+}
+.hero-stats .stat + .stat::before{
+  content:""; position:absolute; left:0; top:18%; height:64%; width:1px;
+  background:var(--line-2,rgba(255,255,255,.12));
+}
+.hero-stats dd{
+  margin:0;
+  display:inline-flex; align-items:baseline; gap:2px;
+  font-family:'Space Grotesk',system-ui,sans-serif;
+  font-weight:700; font-size:clamp(2rem,4.4vw,2.9rem);
+  line-height:1; letter-spacing:-.03em;
+  color:var(--text,#fff);
+  font-variant-numeric:tabular-nums;
+}
+.hero-stats dd i{ font-style:normal; color:var(--accent-green); font-size:.7em; font-weight:600; }
+.stat-blue dd > span:first-child{ color:var(--accent-sky); }
+.star-glyph{ color:var(--accent-red); font-size:.78em; margin-right:1px; }
+.hero-stats dt{
+  font:500 12.5px/1 'Inter',system-ui,sans-serif;
+  letter-spacing:.04em; text-transform:uppercase;
+  color:var(--text-3,#778);
+}
+
+/* ---- entrance reveals ---- */
+.reveal{ opacity:0; transform:translateY(16px); animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+.d1{ animation-delay:.05s } .d2{ animation-delay:.14s } .d3{ animation-delay:.24s }
+.d4{ animation-delay:.34s } .d5{ animation-delay:.44s } .d6{ animation-delay:.54s }
+@keyframes rise{ to{ opacity:1; transform:translateY(0) } }
+
+/* ---- responsive ---- */
+@media (max-width:680px){
+  .hero{ min-height:auto; padding-top:clamp(72px,18vw,108px); }
+  .blob{ filter:blur(52px); }
+  #search{ height:60px; padding:0 58px 0 52px; font-size:1rem; }
+  .search-ic{ left:18px; }
+  .search-kbd{ display:none; }
+  .clear-s{ right:18px; }
+  .hero-stats .stat{ padding:4px 22px; }
+}
+@media (max-width:420px){
+  .hero-title-sub{ font-size:.68em; }
+  .suggests-label{ width:100%; text-align:center; margin:0 0 2px; }
+  .hero-stats{ margin-top:40px; }
+  .hero-stats .stat{ padding:4px 16px; }
+  .hero-stats dd{ font-size:1.9rem; }
+}
+@media (max-width:360px){
+  .hero-title{ font-size:2.2rem; }
+  .hero-rail .r-blue{ width:34px; } .hero-rail .r-green{ width:28px; } .hero-rail .r-white{ width:20px; }
+}
+
+/* ---- reduced motion ---- */
+@media (prefers-reduced-motion:reduce){
+  .blob{ animation:none !important; }
+  .st{ animation:none !important; opacity:.55; }
+  .pill-dot{ animation:none !important; }
+  .reveal{ animation:none !important; opacity:1; transform:none; }
+  #search:focus{ transform:none; }
+  .clear-s:hover{ transform:translateY(-50%); }
+  .suggests button:hover{ transform:none; }
+}
+
+  /* ===== Section blocks ===== */
+  .block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:0 0 20px}
+  .eyebrow{display:block;font-family:'Space Grotesk';font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:#5b8cff;margin-bottom:7px}
+  .block-head h2{font-size:24px;font-weight:600}
+
+  .featured{padding:30px 0 8px}
+  .feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(218px,1fr));gap:13px}
+  .fcard{display:flex;align-items:center;gap:12px;padding:14px;border-radius:16px;position:relative;overflow:hidden;
+    background:var(--surface);border:1px solid var(--line);transition:transform .25s cubic-bezier(.2,.7,.2,1),border-color .25s}
+  .fcard::before{content:"";position:absolute;inset:0;border-radius:inherit;opacity:0;pointer-events:none;transition:opacity .3s;
+    background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--accent) 26%,transparent),transparent 60%)}
+  .fcard:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+  .fcard:hover::before{opacity:1}
+  .fc-body{min-width:0;flex:1;position:relative;z-index:1}
+  .fc-name{font-weight:600;font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fc-host{font-size:11.5px;color:var(--accent);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  /* ===== Safety ===== */
+  .safety{display:flex;gap:15px;align-items:flex-start;margin:26px auto 0;
+    background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px;position:relative;overflow:hidden}
+  .safety::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(#fbbf24,#fb7185)}
+  .safety .si2{font-size:24px;flex:none}
+  .safety b{font-weight:600;color:var(--text)}
+  .safety p{margin:5px 0 0;font-size:13.5px;color:var(--text-2);line-height:1.55}
+
+  /* ===== Filters ===== */
+  .filters{position:sticky;top:66px;z-index:50;background:var(--glass);backdrop-filter:blur(20px) saturate(180%);
+    -webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--line);padding:13px 0;margin:34px 0 10px}
+  .filter-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .chip{font-family:inherit;border:1px solid var(--line);background:var(--surface);color:var(--text-2);
+    padding:8px 15px;border-radius:999px;font-size:13.5px;font-weight:500;cursor:pointer;transition:.15s;white-space:nowrap}
+  .chip:hover{color:var(--text);border-color:var(--line-2)}
+  .chip.active{background:var(--text);border-color:var(--text);color:var(--bg)}
+  .chip.star.active{background:linear-gradient(120deg,#fbbf24,#fb923c);border-color:transparent;color:#3a2400}
+  .cat-nav{display:flex;gap:7px;overflow-x:auto;padding:12px 0 2px;scrollbar-width:none}
+  .cat-nav::-webkit-scrollbar{display:none}
+  .cat-nav a{flex:none;padding:7px 13px;border-radius:10px;font-size:13px;font-weight:500;color:var(--text-3);
+    background:transparent;border:1px solid transparent;transition:.15s;white-space:nowrap}
+  .cat-nav a:hover{color:var(--text-2)}
+  .cat-nav a.active{color:var(--text);background:var(--surface-2);border-color:var(--line)}
+
+  /* ===== Category cards ===== */
+  .section{margin:40px 0;scroll-margin-top:160px}
+  .sec-head{display:flex;align-items:center;gap:14px;margin:0 0 20px}
+  .sec-no{font-family:'Space Grotesk';font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--accent);opacity:.85}
+  .sec-ico{width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;font-size:23px;
+    background:color-mix(in srgb,var(--accent) 14%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 28%,transparent)}
+  .sec-head h2{font-size:22px;font-weight:600}
+  .sec-head .cnt{font-size:12.5px;color:var(--text-3);font-weight:500}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(282px,1fr));gap:14px}
+  .card{position:relative;display:flex;flex-direction:column;padding:18px;border-radius:18px;overflow:hidden;
+    background:var(--surface);border:1px solid var(--line);transition:transform .26s cubic-bezier(.2,.7,.2,1),border-color .26s,box-shadow .26s}
+  .card::before{content:"";position:absolute;inset:0;border-radius:inherit;opacity:0;pointer-events:none;transition:opacity .3s;
+    background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--accent) 20%,transparent),transparent 58%)}
+  .card:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--accent) 50%,var(--line));
+    box-shadow:0 20px 40px -22px color-mix(in srgb,var(--accent) 60%,transparent),var(--shadow)}
+  .card:hover::before{opacity:1}
+  .card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .card>*{position:relative;z-index:1}
+  .card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:14px}
+  .fav{width:46px;height:46px;border-radius:13px;flex:none;position:relative;overflow:hidden;display:grid;place-items:center;
+    color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:19px;
+    background:color-mix(in srgb,var(--accent) 70%,#222);border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+  .fav img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:8px;background:#fff}
+  .badges{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+  .badge{font-size:10px;font-weight:600;padding:3px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap;letter-spacing:.01em}
+  .b-ok{color:#34d399;border-color:rgba(52,211,153,.32);background:rgba(52,211,153,.1)}
+  .b-priv{color:var(--text-3);background:var(--surface-2)}
+  .b-star{color:#fbbf24;border-color:rgba(251,191,36,.34);background:rgba(251,191,36,.1)}
+  .card-name{font-family:'Space Grotesk';font-weight:600;font-size:16px;line-height:1.25;word-break:break-word}
+  .card-host{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--accent);font-weight:500;margin:4px 0 9px}
+  .card-host .ext{opacity:.65;transition:transform .2s}
+  .card:hover .card-host .ext{transform:translate(2px,-2px)}
+  .card-desc{font-size:13px;color:var(--text-2);line-height:1.5;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+  .empty{display:none;text-align:center;padding:80px 20px;color:var(--text-2)}
+  .empty .ic{font-size:48px;opacity:.4}
+  .empty h3{margin:16px 0 6px;font-size:19px;font-weight:600;color:var(--text)}
+
+  /* ===== Footer ===== */
+  footer{border-top:1px solid var(--line);margin-top:50px;padding:34px 0 46px;color:var(--text-2);font-size:13.5px;background:var(--bg-soft)}
+  .foot-in{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+  .foot-in a{color:#5b8cff}
+  .to-top{cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--text);background:var(--surface);
+    border:1px solid var(--line);border-radius:11px;padding:9px 14px;font-weight:500;transition:.15s}
+  .to-top:hover{border-color:var(--line-2);transform:translateY(-2px)}
+
+  /* ===== Reveal cards ===== */
+  .card.cloak,.fcard.cloak{opacity:0;transform:translateY(20px)}
+  .card.in,.fcard.in{animation:crise .6s cubic-bezier(.2,.75,.25,1)}
+  @keyframes crise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+  @media(max-width:680px){
+    .nav-in{height:58px}.filters{top:58px}
+    .brand-text small{display:none}
+    .grid{grid-template-columns:1fr}
+    .kbd{display:none}#search{padding-right:52px}
+    .section{scroll-margin-top:150px}
+    .block-head h2{font-size:20px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .reveal,.card.cloak,.fcard.cloak{opacity:1!important;transform:none!important;animation:none!important}
+    .flag-svg,.aurora i,.hero h1 .grad,.pill .dot{animation:none}
+    html{scroll-behavior:auto}
+  }
+
+  /* ===== Catalog app shell (sidebar + panel) ===== */
+  .app{display:grid; grid-template-columns:270px minmax(0,1fr); gap:26px; align-items:start; margin:26px auto 0; scroll-margin-top:72px}
+  .sidebar{position:sticky; top:84px}
+  .side-head{font-size:11.5px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--text-3); padding:2px 10px 10px}
+  .cat-list{display:flex; flex-direction:column; gap:3px; max-height:calc(100vh - 116px); overflow-y:auto; padding-right:4px}
+  .cat-list::-webkit-scrollbar{width:8px}
+  .cat-list::-webkit-scrollbar-thumb{background:var(--line-2); border-radius:99px; border:2px solid transparent; background-clip:padding-box}
+  .cat-item{display:flex; align-items:center; gap:11px; width:100%; text-align:left; padding:8px 11px; border-radius:12px; border:1px solid transparent; background:transparent; color:var(--text-2); font-family:inherit; font-size:13.5px; font-weight:500; cursor:pointer; transition:background .15s,border-color .15s,color .15s}
+  .cat-item:hover{background:var(--surface); color:var(--text)}
+  .cat-item.active{background:color-mix(in srgb,var(--accent) 13%, var(--surface)); border-color:color-mix(in srgb,var(--accent) 32%, transparent); color:var(--text)}
+  .ci-ico{width:30px; height:30px; flex:none; display:grid; place-items:center; font-size:15px; border-radius:9px; background:color-mix(in srgb,var(--accent) 16%, var(--surface)); border:1px solid color-mix(in srgb,var(--accent) 22%, transparent)}
+  .ci-name{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .ci-count{flex:none; font-size:11px; color:var(--text-3); font-variant-numeric:tabular-nums; background:var(--surface-2); padding:2px 8px; border-radius:99px}
+  .cat-item.active .ci-count{color:var(--accent); background:color-mix(in srgb,var(--accent) 16%, transparent)}
+
+  .panel{min-width:0}
+  .panel-bar{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; position:sticky; top:66px; z-index:30; padding:12px 0; margin-bottom:4px; background:var(--bg)}
+  .panel-head{display:flex; align-items:center; gap:13px; min-width:0}
+  .panel-ico{width:46px; height:46px; flex:none; display:grid; place-items:center; font-size:21px; border-radius:13px; background:color-mix(in srgb,var(--accent) 14%, var(--surface)); border:1px solid color-mix(in srgb,var(--accent) 26%, transparent)}
+  .panel-meta{min-width:0}
+  .panel-meta h2{font-family:'Space Grotesk'; font-size:20px; font-weight:600; letter-spacing:-.02em; line-height:1.15; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .panel-sub{font-size:12.5px; color:var(--text-3)}
+
+  @media(max-width:880px){
+    .app{grid-template-columns:1fr; gap:8px; margin-top:18px}
+    .sidebar{position:sticky; top:58px; z-index:31; margin:0 -22px; padding:8px 22px; background:var(--glass); backdrop-filter:blur(16px) saturate(180%); -webkit-backdrop-filter:blur(16px) saturate(180%)}
+    .side-head{display:none}
+    .cat-list{flex-direction:row; overflow-x:auto; max-height:none; gap:7px; padding:0 0 4px}
+    .cat-list::-webkit-scrollbar{height:0}
+    .cat-item{width:auto; flex:none; border-color:var(--line); padding:7px 12px}
+    .ci-ico{display:none}
+    .ci-count{display:none}
+    .panel-bar{position:static; padding:14px 0 8px}
+  }
+
+  /* ===== Drill-down: category cards + drawer ===== */
+  .catalog{margin:26px auto 0; scroll-margin-top:72px}
+  .cc-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px}
+  .ccard{position:relative; display:flex; flex-direction:column; text-align:left; padding:18px; border-radius:18px; overflow:hidden;
+    background:var(--surface); border:1px solid var(--line); color:var(--text); font-family:inherit; cursor:pointer;
+    transition:transform .26s cubic-bezier(.2,.7,.2,1),border-color .26s,box-shadow .26s}
+  .ccard::before{content:"";position:absolute;inset:0;border-radius:inherit;opacity:0;pointer-events:none;transition:opacity .3s;
+    background:radial-gradient(440px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--accent) 20%,transparent),transparent 58%)}
+  .ccard:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--accent) 50%,var(--line));
+    box-shadow:0 20px 40px -22px color-mix(in srgb,var(--accent) 60%,transparent),var(--shadow)}
+  .ccard:hover::before{opacity:1}
+  .ccard:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .ccard>*{position:relative;z-index:1}
+  .cc-ico{width:48px;height:48px;flex:none;display:grid;place-items:center;font-size:23px;border-radius:14px;margin-bottom:13px;
+    background:color-mix(in srgb,var(--accent) 16%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 26%,transparent)}
+  .cc-name{font-family:'Space Grotesk';font-weight:600;font-size:16.5px;letter-spacing:-.01em;line-height:1.25}
+  .cc-desc{font-size:13px;color:var(--text-2);line-height:1.5;margin-top:6px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .cc-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:14px}
+  .cc-count{font-size:11.5px;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,transparent);padding:4px 10px;border-radius:99px}
+  .cc-arrow{color:var(--accent);font-size:17px;opacity:.85;transition:transform .2s}
+  .ccard:hover .cc-arrow{transform:translateX(4px)}
+  .ccard.feat{border-color:color-mix(in srgb,#f4a712 40%,var(--line));background:color-mix(in srgb,#f4a712 8%,var(--surface))}
+
+  .back-btn{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-size:13px;font-weight:500;color:var(--text-2);
+    background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 13px;cursor:pointer;transition:.15s;flex:none}
+  .back-btn:hover{color:var(--text);border-color:var(--line-2);transform:translateX(-2px)}
+
+  .menu-btn{font-size:17px}
+  .drawer-backdrop{position:fixed;inset:0;z-index:80;background:rgba(3,5,12,.55);opacity:0;visibility:hidden;
+    transition:opacity .25s,visibility .25s;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+  body.drawer-open .drawer-backdrop{opacity:1;visibility:visible}
+  .drawer{position:fixed;top:0;left:0;bottom:0;width:304px;max-width:85vw;z-index:81;background:var(--bg-soft);
+    border-right:1px solid var(--line);transform:translateX(-102%);transition:transform .3s cubic-bezier(.2,.7,.2,1);
+    display:flex;flex-direction:column;padding:16px 14px;box-shadow:30px 0 60px -20px rgba(0,0,0,.6)}
+  body.drawer-open .drawer{transform:none}
+  .drawer-head{display:flex;align-items:center;justify-content:space-between;padding:4px 8px 12px;
+    font-family:'Space Grotesk';font-weight:600;font-size:15px;color:var(--text)}
+  .drawer-head button{width:32px;height:32px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--text-2);cursor:pointer;font-size:13px}
+  .drawer-head button:hover{color:var(--text);border-color:var(--line-2)}
+  .drawer .cat-list{flex-direction:column;overflow-x:hidden;overflow-y:auto;max-height:none;flex:1;padding-right:4px}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Bo'limlar menyusi" aria-expanded="false">☰</button>
+    <a class="brand" href="#top">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="#fff"><rect x="3.6" y="3.6" width="7.6" height="7.6" rx="2.3"/><rect x="12.8" y="3.6" width="7.6" height="7.6" rx="2.3" opacity=".82"/><rect x="3.6" y="12.8" width="7.6" height="7.6" rx="2.3" opacity=".82"/><rect x="12.8" y="12.8" width="7.6" height="7.6" rx="2.3" opacity=".62"/></g></svg></span>
+      <span class="brand-text">Foydali <span>saytlar</span></span>
+    </a>
+    <span class="spacer"></span>
+    <button class="icon-btn" id="themeBtn" title="Kun / Tun rejimi" aria-label="Mavzuni almashtirish">🌙</button>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero" id="hero" aria-labelledby="heroTitle">
+  <div class="hero-aurora" aria-hidden="true">
+    <span class="blob blob-blue"></span>
+    <span class="blob blob-green"></span>
+    <span class="blob blob-white"></span>
+    <span class="blob blob-red"></span>
+    <svg class="hero-mesh" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="hg1" cx="22%" cy="30%" r="60%">
+          <stop offset="0%" stop-color="#0099B5" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#0099B5" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="hg2" cx="80%" cy="22%" r="55%">
+          <stop offset="0%" stop-color="#1EB53A" stop-opacity="0.45"/>
+          <stop offset="100%" stop-color="#1EB53A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="hg3" cx="62%" cy="82%" r="55%">
+          <stop offset="0%" stop-color="#CE1126" stop-opacity="0.18"/>
+          <stop offset="100%" stop-color="#CE1126" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="hg4" cx="42%" cy="60%" r="45%">
+          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.26"/>
+          <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+        </radialGradient>
+        <path id="uzStar" d="M0,-4.6 L1.35,-1.42 4.6,-1.42 1.78,0.72 2.84,4 0,2 -2.84,4 -1.78,0.72 -4.6,-1.42 -1.35,-1.42 Z"/>
+      </defs>
+      <rect width="1200" height="600" fill="url(#hg1)"/>
+      <rect width="1200" height="600" fill="url(#hg2)"/>
+      <rect width="1200" height="600" fill="url(#hg3)"/>
+      <rect width="1200" height="600" fill="url(#hg4)"/>
+    </svg>
+    <svg class="hero-stars" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g class="star-field">
+        <use class="st s1" href="#uzStar" transform="translate(872,96) scale(1.05)"/>
+        <use class="st s2" href="#uzStar" transform="translate(958,80) scale(0.85)"/>
+        <use class="st s3" href="#uzStar" transform="translate(1044,104) scale(1)"/>
+        <use class="st s2" href="#uzStar" transform="translate(840,168) scale(0.8)"/>
+        <use class="st s1" href="#uzStar" transform="translate(926,156) scale(1.1)"/>
+        <use class="st s3" href="#uzStar" transform="translate(1012,176) scale(0.9)"/>
+        <use class="st s2" href="#uzStar" transform="translate(1098,160) scale(0.82)"/>
+        <use class="st s1" href="#uzStar" transform="translate(150,452) scale(1.05)"/>
+        <use class="st s3" href="#uzStar" transform="translate(236,470) scale(0.88)"/>
+        <use class="st s2" href="#uzStar" transform="translate(96,498) scale(0.8)"/>
+        <use class="st s1" href="#uzStar" transform="translate(190,520) scale(0.95)"/>
+        <use class="st s3" href="#uzStar" transform="translate(284,520) scale(0.85)"/>
+      </g>
+    </svg>
+    <span class="hero-grid"></span>
+    <span class="hero-scrim"></span>
+  </div>
+
+  <div class="hero-inner">
+    <span class="hero-rail reveal d1" aria-hidden="true">
+      <i class="r-blue"></i><i class="r-red"></i><i class="r-white"></i><i class="r-red2"></i><i class="r-green"></i>
+    </span>
+
+    <span class="hero-pill reveal d1">
+      <span class="pill-dot" aria-hidden="true"></span>
+      Tekshirilgan portallar &middot; rasmiy &amp; ishonchli
+      <span class="pill-sep" aria-hidden="true"></span>
+      <span id="pillCount"></span>
+    </span>
+
+    <h1 class="hero-title reveal d2" id="heroTitle">
+      O&rsquo;zbekistonning eng <span class="grad-word">foydali</span> saytlari
+      <span class="hero-title-sub">&mdash; bitta ishonchli joyda</span>
+    </h1>
+
+    <p class="hero-sub reveal d3">
+      Davlat xizmatlari, qonun, soliq, transport, ta&rsquo;lim, bank va tibbiyot &mdash;
+      rasmiy portallarni soniyalarda toping.
+    </p>
+
+    <form class="hero-search reveal d4" role="search" onsubmit="return false">
+      <span class="search-ic" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </span>
+      <input id="search" type="search" autocomplete="off" aria-label="Saytlarni qidirish"
+        placeholder="Qidiring: jarima, pensiya, chipta, IMEI, valyuta&hellip;" />
+      <button class="clear-s" id="clearS" type="button" aria-label="Tozalash">&#10005;</button>
+      <kbd class="search-kbd" aria-hidden="true">/</kbd>
+    </form>
+
+    <div class="suggests reveal d5" aria-label="Ommabop qidiruvlar">
+      <span class="suggests-label" aria-hidden="true">Ommabop:</span>
+      <button data-q="jarima" type="button">jarima to&rsquo;lash</button>
+      <button data-q="pensiya" type="button">pensiya</button>
+      <button data-q="chipta" type="button">chipta</button>
+      <button data-q="IMEI" type="button">IMEI</button>
+      <button data-q="valyuta" type="button">valyuta kursi</button>
+      <button data-q="vakansiya" type="button">ish &middot; vakansiya</button>
+    </div>
+
+    <dl class="hero-stats reveal d6">
+      <div class="stat stat-blue">
+        <dd><span id="stSites">0</span><i>+</i></dd>
+        <dt>foydali sayt</dt>
+      </div>
+      <div class="stat stat-green">
+        <dd><span id="stCats">0</span></dd>
+        <dt>yo&rsquo;nalish</dt>
+      </div>
+      <div class="stat stat-red">
+        <dd><span class="star-glyph" aria-hidden="true">&#9733;</span><span id="stStar">0</span></dd>
+        <dt>tavsiya</dt>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="safety">
+    <span class="si2">🔒</span>
+    <div>
+      <b>Xavfsizlik qoidasi.</b>
+      <p>Davlat xizmatlari uchun faqat <b>.gov.uz / .uz</b> rasmiy portallaridan yoki <b>my.gov.uz</b> ichidagi xizmatdan foydalaning. Telegram bot yoki reklama orqali chiqqan soxta saytlarga pasport, karta, OneID va SMS-kod ma'lumotlaringizni hech qachon bermang.</p>
+    </div>
+  </div>
+</div>
+
+<section class="catalog wrap" id="catalog">
+  <div class="panel">
+    <div class="panel-bar">
+      <div class="panel-head" id="panelHead"></div>
+      <div class="filter-row" id="typeFilter">
+        <button class="chip active" data-type="all">Hammasi</button>
+        <button class="chip" data-type="rasmiy">🏛️ Rasmiy</button>
+        <button class="chip" data-type="xususiy">🏢 Xususiy</button>
+        <button class="chip star" data-type="star">⭐ Tavsiya</button>
+      </div>
+    </div>
+    <div id="content"></div>
+    <div class="empty" id="empty">
+      <div class="ic">🔍</div>
+      <h3>Hech narsa topilmadi</h3>
+      <p>Boshqa so'z bilan qidirib ko'ring yoki filtrni tozalang.</p>
+    </div>
+  </div>
+</section>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer" aria-label="Bo'limlar menyusi">
+  <div class="drawer-head">Bo'limlar <button id="drawerClose" aria-label="Yopish">✕</button></div>
+  <nav class="cat-list" id="catList"></nav>
+</aside>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>
+      <b style="color:var(--text)">Foydali saytlar</b> · 2026-yil holatiga tekshirilgan.<br>
+      Bu sayt rasmiy normativ-huquqiy manba emas; qonun va qarorni <a href="https://lex.uz" target="_blank" rel="noopener">lex.uz</a> orqali tekshiring.
+    </div>
+    <span class="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Yuqoriga</span>
+  </div>
+</footer>
+
+<script>
+const CATS = [
+  { id:"davlat", icon:"🏛️", title:"Asosiy davlat xizmatlari", sites:[
+    {n:"my.gov.uz",u:"https://my.gov.uz",r:1,s:1,f:1,d:"Yagona interaktiv davlat xizmatlari portali: ma'lumotnoma, subsidiya, pensiya, soliq, kadastr, FHDYO va ta'lim."},
+    {n:"gov.uz",u:"https://gov.uz",r:1,d:"Hukumat portali — vazirlik, qo'mita, agentlik va hokimliklar rasmiy sahifalari."},
+    {n:"id.egov.uz",u:"https://id.egov.uz",r:1,d:"OneID — davlat portallariga yagona login yoki Mobile-ID orqali kirish."},
+    {n:"ERI olish",u:"https://my.gov.uz/uz/service/get/1091",r:1,d:"Elektron raqamli imzo (ERI) kalitini my.gov.uz orqali rasmiylashtirish."},
+    {n:"dgov.uz",u:"https://dgov.uz",r:1,d:"Raqamli hukumat loyihalari va elektron davlat tizimlari haqida ma'lumot."},
+    {n:"reestr.uz",u:"https://reestr.uz",r:1,d:"Davlat axborot tizimlari va resurslari reestri."},
+    {n:"data.egov.uz",u:"https://data.egov.uz",r:1,d:"Davlat organlarining ochiq ma'lumotlari (open data)."},
+    {n:"stat.uz",u:"https://stat.uz",r:1,d:"Rasmiy statistika: aholi, iqtisodiyot, hududlar, narxlar va sanoat."},
+    {n:"siat.stat.uz",u:"https://siat.stat.uz",r:1,s:1,d:"SIAT — interaktiv statistika: aholi, sanoat, narxlar va hududlar kesimida jadval va fayllar."},
+    {n:"openbudget.uz",u:"https://openbudget.uz",r:1,s:1,d:"Tashabbusli budjet — budjet xarajatlari va loyihalarga ovoz berish."},
+    {n:"murojaat.gov.uz",u:"https://murojaat.gov.uz",r:1,s:1,f:1,d:"Davlat tashkilotlariga yagona tizim orqali murojaat yuborish."},
+    {n:"pm.gov.uz",u:"https://pm.gov.uz",r:1,d:"Prezident virtual qabulxonasi va Xalq qabulxonalariga murojaat."},
+  ]},
+  { id:"qonun", icon:"⚖️", title:"Qonunchilik va yuridik xizmatlar", sites:[
+    {n:"lex.uz",u:"https://lex.uz",r:1,s:1,f:1,d:"Qonun, kodeks, Prezident va Hukumat hujjatlarining rasmiy milliy bazasi."},
+    {n:"regulation.gov.uz",u:"https://regulation.gov.uz",r:1,d:"Normativ-huquqiy hujjatlar loyihalarini muhokama qilish portali."},
+    {n:"e-qaror.gov.uz",u:"https://e-qaror.gov.uz",r:1,s:1,d:"Hokimlar va mahalliy Kengashlar qarorlarini izlash."},
+    {n:"e-qaror-respublika.gov.uz",u:"https://e-qaror-respublika.gov.uz",r:1,d:"Respublika ijro etuvchi organlarining buyruq va qarorlari."},
+    {n:"advice.uz",u:"https://advice.uz",r:1,s:1,d:"Bepul huquqiy ma'lumot, savol-javob va huquqiy maslahat."},
+    {n:"e-notarius.uz",u:"https://e-notarius.uz",r:1,s:1,f:1,d:"Notarius qidirish, qabulga yozilish, navbat va notarial xizmatlar."},
+    {n:"archive.uz",u:"https://archive.uz",r:1,d:"O'zarxiv — arxiv tashkilotlari va arxiv xizmatlari."},
+    {n:"baza.ima.uz",u:"https://baza.ima.uz",r:1,d:"Patent, tovar belgisi, ixtiro va sanoat namunalari bazasi."},
+    {n:"raqobat.gov.uz",u:"https://raqobat.gov.uz",r:1,d:"Iste'molchi huquqlari, reklama, raqobat va monopoliya murojaatlari."},
+    {n:"norma.uz",u:"https://www.norma.uz",r:0,d:"Qonunchilik, soliq, kadrlar va buxgalteriya sharhlari (xususiy)."},
+    {n:"e-imzo.uz",u:"https://e-imzo.uz",r:1,s:1,f:1,d:"Elektron raqamli imzo (ERI) olish, sertifikatni boshqarish va E-IMZO dasturini yuklab olish."},
+    {n:"yurxizmat.uz",u:"https://yurxizmat.uz",r:1,s:1,f:1,d:"Konstruktor orqali ariza, da'vo, shartnoma, ishonchnoma va boshqa huquqiy hujjatlarni o'zingiz tayyorlash."},
+    {n:"e-advokat.uz",u:"https://e-advokat.uz",r:1,s:1,d:"Advokatlar, byurolar, firmalar, mediatorlar va navbatchi advokatlar reestri."},
+    {n:"lawyer.adliya.uz",u:"https://lawyer.adliya.uz",r:1,d:"Davlat hisobidan bepul yuridik yordam uchun advokatni avtomatik tanlash tizimi."},
+    {n:"e-ngo.uz",u:"https://e-ngo.uz",r:1,d:"NNT reestri, grant e'lonlari va grantga ariza topshirish tizimi."},
+    {n:"petition.gov.uz",u:"https://petition.gov.uz",r:1,s:1,d:"'Mening fikrim' — jamoaviy murojaat va taklif; yetarli ovoz yig'ilsa Kengash ko'rib chiqadi."},
+    {n:"anticorruption.uz",u:"https://anticorruption.uz",r:1,d:"Korrupsiyaga qarshi kurashish agentligi — xavflar, qonunchilik va murojaat kanallari."},
+    {n:"cabinet.fairtech.uz",u:"https://cabinet.fairtech.uz",r:1,s:1,d:"Iste'molchi huquqlari va raqobat bo'yicha shikoyat: sifatsiz mahsulot, qaytmagan pul, onlayn savdo."},
+  ]},
+  { id:"sud", icon:"🧑‍⚖️", title:"Sud, ijro va jarimalar", sites:[
+    {n:"my.sud.uz",u:"https://my.sud.uz",r:1,s:1,f:1,d:"Sudga elektron murojaat, da'vo, arizalar va ish holatini kuzatish."},
+    {n:"sud.uz",u:"https://sud.uz",r:1,d:"Oliy sud rasmiy sayti va sud tizimi ma'lumotlari."},
+    {n:"public.sud.uz",u:"https://public.sud.uz",r:1,d:"E'lon qilingan sud hujjatlari."},
+    {n:"jadval2.sud.uz",u:"https://jadval2.sud.uz",r:1,d:"Sud majlislari jadvali."},
+    {n:"exsud.sud.uz",u:"https://exsud.sud.uz",r:1,d:"Iqtisodiy sud hujjatlari va ishlar bo'yicha qidiruv."},
+    {n:"mib.uz",u:"https://mib.uz",r:1,s:1,d:"Majburiy ijro byurosi — ijro qarzdorligi va cheklovlar."},
+    {n:"ejarima.uz",u:"https://ejarima.uz",r:1,s:1,f:1,d:"Ma'muriy va yo'l harakati jarimalarini tekshirish hamda to'lash."},
+  ]},
+  { id:"transport", icon:"🚆", title:"Poyezd, samolyot va avtobus chiptalari", sites:[
+    {n:"eticket.railway.uz",u:"https://eticket.railway.uz",r:1,s:1,f:1,d:"O'zbekiston temir yo'llari poyezdlariga rasmiy elektron chipta."},
+    {n:"railway.uz",u:"https://railway.uz",r:1,d:"Temir yo'l yangiliklari, jadval va yo'lovchilarga ma'lumot."},
+    {n:"uzairways.com",u:"https://www.uzairways.com",r:1,s:1,f:1,d:"Uzbekistan Airways — reyslar, tariflar va ro'yxatdan o'tish."},
+    {n:"book.uzairways.com",u:"https://book.uzairways.com",r:1,d:"Uzbekistan Airways chiptasini to'g'ridan-to'g'ri bron qilish."},
+    {n:"avtoticket.uz",u:"https://avtoticket.uz",r:1,s:1,d:"Shaharlararo va xalqaro avtobus chiptalari."},
+    {n:"ticket.atto.uz",u:"https://ticket.atto.uz",r:1,d:"Avtobus yo'nalishlari va chiptalarni rasmiylashtirish."},
+    {n:"avtovokzal.uz",u:"https://avtovokzal.uz",r:1,d:"Avtovokzal yo'nalishlari va chipta xizmatlari."},
+    {n:"Yandex Xaritalar",u:"https://yandex.uz/maps/171/uzbekistan/",r:0,d:"Avtomobil, piyoda va jamoat transporti marshrutlari (xususiy)."},
+    {n:"2GIS",u:"https://2gis.uz",r:0,d:"Tashkilotlar, telefonlar, ish vaqti va marshrutlar (xususiy)."},
+    {n:"avtoraqam.uzex.uz",u:"https://avtoraqam.uzex.uz",r:1,s:1,d:"Maxsus avtomobil davlat raqam belgilarini elektron savdo orqali olish."},
+    {n:"uzairports.com",u:"https://uzairports.com",r:1,s:1,d:"O'zbekiston aeroportlari — jonli reys holati: uchish, qo'nish, kechikish va terminal."},
+  ]},
+  { id:"soliq", icon:"💼", title:"Soliq va tadbirkorlik", sites:[
+    {n:"my.soliq.uz",u:"https://my.soliq.uz",r:1,s:1,f:1,d:"Soliq qarzdorligi, deklaratsiya, hisobvaraq, yuridik shaxs va YTT xizmatlari."},
+    {n:"soliq.uz",u:"https://soliq.uz",r:1,d:"Soliq qo'mitasi rasmiy sayti, tushuntirish va yangiliklar."},
+    {n:"new.birdarcha.uz",u:"https://new.birdarcha.uz",r:1,s:1,d:"Biznesni davlat ro'yxatidan o'tkazish va tadbirkorlik xizmatlari."},
+    {n:"fo.birdarcha.uz",u:"https://fo.birdarcha.uz",r:1,d:"Firma nomini tekshirish va yuridik shaxs ma'lumotlari."},
+    {n:"license.gov.uz",u:"https://license.gov.uz",r:1,s:1,d:"Litsenziya, ruxsatnoma va xabardor qilish tartiblari."},
+    {n:"singlewindow.uz",u:"https://singlewindow.uz",r:1,d:"Bojxona va tashqi savdo bo'yicha 'Yagona darcha'."},
+    {n:"customs.uz",u:"https://customs.uz",r:1,d:"Bojxona qoidalari, deklaratsiya va tovar olib kirish tartiblari."},
+    {n:"exportportali.uz",u:"https://exportportali.uz",r:1,d:"Eksportchilar uchun xizmatlar va tashqi savdo ma'lumotlari."},
+    {n:"openinfo.uz",u:"https://openinfo.uz",r:1,d:"Kompaniyalar moliyaviy hisoboti, emitentlar va korporativ axborot."},
+    {n:"chamber.uz",u:"https://chamber.uz",r:1,d:"Savdo-sanoat palatasi xizmatlari va tadbirkor murojaatlari."},
+    {n:"it-park.uz",u:"https://it-park.uz",r:1,d:"IT Park rezidentligi, imtiyozlar, dasturlar va startaplar."},
+  ]},
+  { id:"xarid", icon:"📦", title:"Davlat xaridlari, tenderlar va auksionlar", sites:[
+    {n:"e-auksion.uz",u:"https://e-auksion.uz",r:1,s:1,d:"Yer, ko'chmas mulk, davlat aktivlari va avto raqamlari auksionlari."},
+    {n:"e-auksionshop.uz",u:"https://e-auksionshop.uz",r:1,d:"Musodara qilingan, davlat va xususiy mol-mulk savdosi."},
+    {n:"xarid.uzex.uz",u:"https://xarid.uzex.uz",r:1,s:1,d:"Davlat xaridlari elektron tizimi."},
+    {n:"etender.uzex.uz",u:"https://etender.uzex.uz",r:1,d:"Elektron tender va tanlovlar."},
+    {n:"uzex.uz",u:"https://uzex.uz",r:1,d:"O'zbekiston Respublika tovar-xomashyo birjasi."},
+    {n:"shaffofqurilish.uz",u:"https://shaffofqurilish.uz",r:1,d:"Qurilish obyektlari, pudratchilar va qurilish jarayonlari."},
+    {n:"open-data.mc.uz",u:"https://open-data.mc.uz",r:1,d:"Qurilish ruxsatnomalari, ekspertiza xulosalari va reestrlar."},
+    {n:"xarid.mf.uz",u:"https://xarid.mf.uz",r:1,d:"Davlat xaridlari bo'yicha markazlashtirilgan axborot portali."},
+    {n:"xt-xarid.uz",u:"https://xt-xarid.uz",r:1,d:"Davlat xaridlari bo'yicha muqobil elektron savdo platformasi."},
+    {n:"cooperation.uz",u:"https://cooperation.uz",r:1,d:"Elektron kooperatsiya — mahalliy ishlab chiqaruvchilar va korporativ buyurtmalar."},
+    {n:"monitoring.mc.uz",u:"https://monitoring.mc.uz",r:1,d:"Qurilish va infratuzilma loyihalaridagi xarid va monitoring ma'lumotlari."},
+  ]},
+  { id:"kadastr", icon:"🏠", title:"Kadastr, uy-joy va ko'chmas mulk", sites:[
+    {n:"davreestr.uz",u:"https://davreestr.uz",r:1,s:1,d:"Ko'chmas mulkka bo'lgan huquqlar davlat reestri xizmatlari."},
+    {n:"Kadastr agentligi",u:"https://gov.uz/oz/kadastr",r:1,d:"Kadastr organlarining rasmiy sahifasi."},
+    {n:"e-auksion.uz",u:"https://e-auksion.uz",r:1,d:"Yer uchastkalari va davlat ko'chmas mulki auksionlari."},
+    {n:"shaffofqurilish.uz",u:"https://shaffofqurilish.uz",r:1,d:"Qurilayotgan obyekt va pudratchilarni tekshirish."},
+    {n:"open-data.mc.uz",u:"https://open-data.mc.uz",r:1,d:"Obyekt qurilishi va foydalanishga topshirish hujjatlari."},
+    {n:"olx.uz",u:"https://www.olx.uz",r:0,d:"Uy-joy va boshqa e'lonlar (xususiy) — huquqiy holatni Davreestrdan tekshiring."},
+  ]},
+  { id:"bank", icon:"🏦", title:"Bank, kredit va valyuta", sites:[
+    {n:"cbu.uz",u:"https://cbu.uz",r:1,s:1,f:1,d:"Markaziy bank — rasmiy valyuta kurslari, banklar ro'yxati va statistika."},
+    {n:"CBU valyuta kurslari",u:"https://cbu.uz/uz/arkhiv-kursov-valyut/",r:1,d:"Joriy va tarixiy rasmiy valyuta kurslari."},
+    {n:"finlit.uz",u:"https://finlit.uz",r:1,d:"Moliyaviy savodxonlik: kredit, omonat, firibgarlik va to'lovlar."},
+    {n:"bankxizmatlari.uz",u:"https://bankxizmatlari.uz",r:1,d:"Bank kreditlari, omonatlar va mahsulotlarni solishtirish."},
+    {n:"openinfo.uz",u:"https://openinfo.uz",r:1,d:"Aksiyadorlik jamiyatlari va moliyaviy hisobotlar."},
+    {n:"uzse.uz",u:"https://uzse.uz",r:1,d:"'Toshkent' Respublika fond birjasi."},
+    {n:"bank.uz",u:"https://bank.uz",r:0,d:"Bank, kredit va omonat takliflarini taqqoslash (xususiy)."},
+    {n:"depozit.uz",u:"https://depozit.uz",r:0,d:"Kredit, omonat, ipoteka va bank mahsulotlari katalogi (xususiy)."},
+    {n:"infokredit.uz",u:"https://infokredit.uz",r:1,s:1,f:1,d:"Kredit tarixi, kredit skoringi va kredit tashkilotlari — kredit olishdan oldin o'zingizni tekshiring."},
+    {n:"portal.infokredit.uz",u:"https://portal.infokredit.uz",r:1,d:"Jismoniy va yuridik shaxslar uchun kredit tarixi shaxsiy kabineti."},
+  ]},
+  { id:"ish", icon:"🧑‍💼", title:"Ish topish va mehnat", sites:[
+    {n:"my.mehnat.uz",u:"https://my.mehnat.uz",r:1,s:1,f:1,d:"Elektron mehnat daftarchasi, shartnoma va ish faoliyati ma'lumotlari."},
+    {n:"ish.mehnat.uz",u:"https://ish.mehnat.uz",r:1,d:"Milliy vakansiyalar bazasi."},
+    {n:"vacancy.gov.uz",u:"https://vacancy.gov.uz",r:1,s:1,d:"Davlat fuqarolik xizmati bo'sh lavozimlari."},
+    {n:"vacancy.argos.uz",u:"https://vacancy.argos.uz",r:1,d:"Davlat vakansiyalari portalining muqobil manzili."},
+    {n:"hh.uz",u:"https://hh.uz",r:0,d:"Kompaniyalardagi vakansiyalar va rezyume joylashtirish (xususiy)."},
+    {n:"osonish.uz",u:"https://osonish.uz",r:0,d:"Vakansiya va kasblar bo'yicha qidiruv."},
+    {n:"ish.uz",u:"https://ish.uz",r:0,d:"Ish e'lonlari (xususiy)."},
+    {n:"ishplus.uz",u:"https://ishplus.uz",r:1,d:"Nogironligi bo'lgan shaxslar uchun mos vakansiyalar."},
+    {n:"OLX — Ish",u:"https://www.olx.uz/oz/rabota/",r:0,d:"Ish e'lonlari; oldindan pul so'rovchilardan ehtiyot bo'ling."},
+  ]},
+  { id:"talim", icon:"🎓", title:"Maktab, universitet va qabul", sites:[
+    {n:"my.maktab.uz",u:"https://my.maktab.uz",r:1,s:1,d:"Maktab xizmatlari, 1-sinfga qabul va o'quvchi ma'lumotlari."},
+    {n:"maktab.uz",u:"https://maktab.uz",r:1,d:"Maktab o'quv materiallari va ta'lim platformasi."},
+    {n:"emaktab.uz",u:"https://emaktab.uz",r:1,d:"Elektron kundalik — baho, dars jadvali va uy vazifalari."},
+    {n:"my.edu.uz",u:"https://my.edu.uz",r:1,d:"Oliy ta'lim xizmatlari va elektron ma'lumotnomalar."},
+    {n:"hemis.uz",u:"https://hemis.uz",r:1,s:1,d:"Oliy ta'lim muassasalarining HEMIS tizimi."},
+    {n:"my.hemis.uz",u:"https://my.hemis.uz",r:1,d:"Talaba shaxsiy kabineti va ta'lim ma'lumotlari."},
+    {n:"diplom.edu.uz",u:"https://diplom.edu.uz",r:1,s:1,d:"Diplom ma'lumotlarini tekshirish."},
+    {n:"transfer.edu.uz",u:"https://transfer.edu.uz",r:1,d:"Talabalar o'qishini ko'chirish va qayta tiklash."},
+    {n:"my.uzbmb.uz",u:"https://my.uzbmb.uz",r:1,s:1,d:"Oliy ta'limga qabul, test, sertifikat va abituriyent xizmatlari."},
+    {n:"mandat.uzbmb.uz",u:"https://mandat.uzbmb.uz",r:1,d:"Test natijalari va mandat."},
+    {n:"uzbmb.uz",u:"https://uzbmb.uz",r:1,d:"Bilim va malakalarni baholash agentligi rasmiy sayti."},
+    {n:"magistr.edu.uz",u:"https://magistr.edu.uz",r:1,d:"Magistraturaga hujjat topshirish (asosan qabul davrida faol)."},
+    {n:"oliygoh.uz",u:"https://oliygoh.uz",r:0,d:"Qabul, grant va ta'lim yangiliklari (xususiy)."},
+  ]},
+  { id:"kutubxona", icon:"📚", title:"Elektron kutubxonalar va kitoblar", sites:[
+    {n:"unilibrary.uz",u:"https://unilibrary.uz",r:1,d:"OTM va ilmiy muassasalarning yagona elektron kutubxonasi."},
+    {n:"e-base.natlib.uz",u:"https://e-base.natlib.uz",r:1,d:"Milliy kutubxona elektron kataloglari va bazalari."},
+    {n:"qr.natlib.uz",u:"https://qr.natlib.uz",r:1,d:"Ochiq elektron va QR-kodli kitoblar."},
+    {n:"natlib.uz",u:"https://natlib.uz",r:1,d:"Alisher Navoiy nomidagi O'zbekiston Milliy kutubxonasi."},
+    {n:"ziyouz.com",u:"https://ziyouz.com",r:0,d:"O'zbek adabiyoti va elektron kitoblar (nodavlat)."},
+    {n:"kitob.uz",u:"https://kitob.uz",r:0,d:"Bolalar va yoshlar uchun elektron adabiyotlar."},
+  ]},
+  { id:"tibbiyot", icon:"🏥", title:"Tibbiyot, dori va ijtimoiy himoya", sites:[
+    {n:"dmed.uz",u:"https://dmed.uz",r:1,s:1,f:1,d:"Elektron tibbiyot: poliklinika, tibbiy karta, navbat va retsept."},
+    {n:"Sog'liqni saqlash vazirligi",u:"https://gov.uz/uz/ssv",r:1,d:"Rasmiy tibbiyot ma'lumotlari va vazirlik xizmatlari."},
+    {n:"uzpharm-control.uz",u:"https://www.uzpharm-control.uz",r:1,s:1,d:"Ro'yxatdan o'tgan dori va tibbiy buyumlar davlat reestri."},
+    {n:"pharm.gov.uz",u:"https://pharm.gov.uz",r:1,d:"Farmatsevtika sohasi, ishlab chiqaruvchi va bozor ma'lumotlari."},
+    {n:"ihma.uz",u:"https://ihma.uz",r:1,d:"Ijtimoiy himoya milliy agentligi va 'Inson' markazlari."},
+    {n:"Pensiya jamg'armasi",u:"https://gov.uz/uz/pj",r:1,d:"Pensiya tayinlash, tartiblar va hududiy bo'limlar."},
+    {n:"my.gov.uz",u:"https://my.gov.uz",r:1,d:"Pensiya, nogironlik, nafaqa va ijtimoiy xizmatlar arizalari."},
+    {n:"clamo.uz",u:"https://clamo.uz",r:1,d:"Tibbiyot tashkilotlarini litsenziyalash va akkreditatsiya — klinika va xodimlar reestri."},
+    {n:"uzpharmagency.uz",u:"https://uzpharmagency.uz",r:1,d:"Farmatsevtika portali va dori vositalarining davlat referent narxlari reestri."},
+    {n:"Sanepid qo'mitasi",u:"https://gov.uz/oz/sanepid",r:1,d:"Sanitariya-epidemiologiya qo'mitasi — epidemiologik vaziyat va ogohlantirishlar."},
+    {n:"apteka.uz",u:"https://apteka.uz/uz",r:0,s:1,d:"Dori nomi, dozasi, analogi va dorixonadagi mavjudligini izlash (xususiy)."},
+    {n:"arzonapteka.uz",u:"https://arzonapteka.uz",r:0,d:"Turli dorixonalardagi dori narxlarini taqqoslash va yaqin dorixonani topish (xususiy)."},
+  ]},
+  { id:"kommunal", icon:"💡", title:"Elektr, gaz, suv va kommunal", sites:[
+    {n:"het.uz",u:"https://het.uz",r:1,s:1,f:1,d:"Hududiy elektr tarmoqlari — elektr ta'minoti, shaxsiy hisob va murojaat."},
+    {n:"uzsuv.uz",u:"https://uzsuv.uz",r:1,s:1,d:"'O'zsuvta'minot' rasmiy portali."},
+    {n:"cabinet.uzsuv.uz",u:"https://cabinet.uzsuv.uz",r:1,d:"Suv ta'minoti iste'molchisi shaxsiy kabineti."},
+    {n:"hududgaz.uz",u:"https://hududgaz.uz",r:1,s:1,d:"Gaz ta'minoti, hududiy filiallar va murojaatlar."},
+    {n:"my.gov.uz",u:"https://my.gov.uz",r:1,d:"Elektr, gaz va muhandislik tarmoqlariga ulanish xizmatlari."},
+    {n:"shaffofqurilish.uz",u:"https://shaffofqurilish.uz",r:1,d:"Qurilish va uy-joy sohasidagi ochiq ma'lumotlar."},
+    {n:"meninguyim.kommunal.uz",u:"https://meninguyim.kommunal.uz",r:1,d:"'Mening uyim' — ko'p qavatli uy boshqaruvi, bajarilgan ishlar va abonent hisoblari."},
+    {n:"my.kommunal.uz",u:"https://my.kommunal.uz",r:1,s:1,d:"'Mening uyim' shaxsiy kabineti — uy to'lovlari, tezkor to'lov va murojaatlar."},
+  ]},
+  { id:"aloqa", icon:"📱", title:"Telefon, internet, pochta va kiberxavfsizlik", sites:[
+    {n:"uzimei.uz",u:"https://uzimei.uz",r:1,s:1,f:1,d:"Telefon IMEI holatini tekshirish, ro'yxatdan o'tkazish va to'lov."},
+    {n:"mnp.uz",u:"https://mnp.uz",r:1,d:"Raqamni saqlagan holda mobil operatorni almashtirish."},
+    {n:"pochta.uz",u:"https://pochta.uz",r:1,s:1,d:"UzPost — jo'natma kuzatish, tarif va pochta bo'limlari."},
+    {n:"uztelecom.uz",u:"https://uztelecom.uz",r:1,d:"Uy interneti, telefon va Uzmobile xizmatlari."},
+    {n:"ucell.uz",u:"https://ucell.uz",r:0,d:"Ucell tarif va xizmatlari."},
+    {n:"mobi.uz",u:"https://mobi.uz",r:0,d:"Mobiuz tarif va xizmatlari."},
+    {n:"beeline.uz",u:"https://beeline.uz",r:0,d:"Beeline tarif va xizmatlari."},
+    {n:"csec.uz",u:"https://csec.uz",r:1,s:1,d:"Kiberxavfsizlik markazi — ogohlantirish va tavsiyalar."},
+    {n:"uzcert.uz",u:"https://uzcert.uz",r:1,d:"Kiberhodisa yoki internet xavfsizligi muammosi haqida murojaat."},
+  ]},
+  { id:"sayohat", icon:"✈️", title:"Sayohat, viza va turizm", sites:[
+    {n:"uzbekistan.travel",u:"https://uzbekistan.travel/uz/",r:1,s:1,d:"O'zbekiston rasmiy turizm portali — shahar, yo'nalish va tadbirlar."},
+    {n:"e-visa.gov.uz",u:"https://e-visa.gov.uz",r:1,d:"Chet el fuqarolari uchun O'zbekiston elektron vizasi."},
+    {n:"uzairways.com",u:"https://www.uzairways.com",r:1,d:"Aviachiptalar."},
+    {n:"eticket.railway.uz",u:"https://eticket.railway.uz",r:1,d:"Poyezd chiptalari."},
+    {n:"avtoticket.uz",u:"https://avtoticket.uz",r:1,d:"Avtobus chiptalari."},
+    {n:"Booking.com",u:"https://www.booking.com",r:0,d:"Mehmonxona va turar joy bron qilish (xalqaro)."},
+    {n:"Tripadvisor",u:"https://www.tripadvisor.com",r:0,d:"Sayyohlar sharhlari va joylar reytingi (xalqaro)."},
+    {n:"Yandex Xaritalar",u:"https://yandex.uz/maps/171/uzbekistan/",r:0,d:"Manzil va marshrut."},
+    {n:"2GIS",u:"https://2gis.uz",r:0,d:"Mehmonxona, restoran va xizmat ko'rsatuvchilar."},
+  ]},
+  { id:"obhavo", icon:"🌤️", title:"Ob-havo, manzil va tashkilot qidirish", sites:[
+    {n:"O'zgidromet",u:"https://gov.uz/oz/hydromet",r:1,d:"Rasmiy ob-havo, gidrologik va favqulodda meteo ma'lumotlar."},
+    {n:"obhavo.uz",u:"https://obhavo.uz",r:0,d:"Shaharlar bo'yicha qulay ob-havo prognozi (xususiy)."},
+    {n:"Yandex Xaritalar",u:"https://yandex.uz/maps/171/uzbekistan/",r:0,s:1,d:"Navigatsiya va jamoat transporti."},
+    {n:"2GIS",u:"https://2gis.uz",r:0,s:1,d:"Tashkilotlar, telefon, ish vaqti va kirish joylari."},
+    {n:"goldenpages.uz",u:"https://www.goldenpages.uz/uz/",r:0,d:"Tashkilot, korxona, telefon va manzillar katalogi."},
+  ]},
+  { id:"yangilik", icon:"📰", title:"Ishonchli yangilik va tahlil", sites:[
+    {n:"kun.uz",u:"https://kun.uz",r:0,d:"O'zbekiston va jahon yangiliklari."},
+    {n:"gazeta.uz",u:"https://www.gazeta.uz/oz/",r:0,d:"Qonunchilik, jamiyat va iqtisodiyotga oid batafsil xabarlar."},
+    {n:"spot.uz",u:"https://www.spot.uz/oz/",r:0,d:"Biznes, bank, iqtisodiyot va texnologiyalar."},
+    {n:"daryo.uz",u:"https://daryo.uz",r:0,d:"Tezkor mahalliy va xalqaro yangiliklar."},
+    {n:"norma.uz",u:"https://www.norma.uz",r:0,d:"Qonunchilik, soliq, kadrlar va buxgalteriya sharhlari."},
+    {n:"review.uz",u:"https://review.uz",r:0,d:"Iqtisodiy sharh va tahlillar."},
+  ]},
+  { id:"ijtimoiy", icon:"🤝", title:"Ijtimoiy yordam, mahalla va yoshlar", sites:[
+    {n:"baraka.gov.uz",u:"https://baraka.gov.uz",r:1,s:1,f:1,d:"'Baraka' ijtimoiy karta — nafaqa, moddiy yordam, ijtimoiy xizmatlar va to'lovlar yagona tizimda."},
+    {n:"online-mahalla.uz",u:"https://online-mahalla.uz",r:1,s:1,d:"Mahalla orqali subsidiya, ssuda, grant, bandlik yordami va mahalla huquqshunosiga murojaat."},
+    {n:"yoshlardaftari.uz",u:"https://yoshlardaftari.uz",r:1,d:"Ijtimoiy, iqtisodiy yoki huquqiy ko'makka muhtoj yoshlar uchun yordam va arizalar tizimi."},
+    {n:"oilakredit.uz",u:"https://oilakredit.uz",r:1,s:1,d:"Oilaviy tadbirkorlik va o'zini band qilish uchun imtiyozli kreditga ariza topshirish."},
+    {n:"yoshlar.gov.uz",u:"https://yoshlar.gov.uz",r:1,d:"Yoshlar ishlari agentligi — Ibrat Farzandlari, Mutolaa, kasb va volontyorlik loyihalari."},
+    {n:"yoshlarportali.uz",u:"https://yoshlarportali.uz",r:0,d:"Yoshlar uchun grant, tanlov, o'quv dasturi va stipendiyalar katalogi."},
+  ]},
+  { id:"migratsiya", icon:"🌍", title:"Migratsiya, xorijiy ish va konsullik", sites:[
+    {n:"xorijdaish.uz",u:"https://xorijdaish.uz",r:1,s:1,f:1,d:"Migratsiya agentligining 'Xorijda ish' tizimi — rasmiy xorijiy vakansiyalar va anketa (vositachilarga ishonmang)."},
+    {n:"consulate.mfa.uz",u:"https://consulate.mfa.uz",r:1,s:1,d:"Konsullik xizmatlari — navbat, pasport masalalari, konsullik ro'yxati va hujjatlar."},
+    {n:"e-mehmon.uz",u:"https://e-mehmon.uz",r:1,d:"Xorijiy fuqarolarni yashash joyi bo'yicha vaqtincha ro'yxatdan o'tkazish (uy egasi/mehmonxona uchun)."},
+  ]},
+  { id:"biznestek", icon:"🔎", title:"Korxona, investitsiya va tashqi savdo", sites:[
+    {n:"registr.stat.uz",u:"https://registr.stat.uz",r:1,d:"Korxonalar va tashkilotlar davlat registri (ba'zi ma'lumotlar OneID bilan)."},
+    {n:"orginfo.uz",u:"https://orginfo.uz/uz/",r:0,s:1,d:"STIR yoki nom orqali tashkilot manzili, rahbari, holati va faoliyat turini tezkor tekshirish (norasmiy)."},
+    {n:"davaktiv.uz",u:"https://davaktiv.uz",r:1,d:"Davlat ulushi bor korxonalar, muassasalar va davlat aktivlari reestrlari."},
+    {n:"invest.gov.uz",u:"https://invest.gov.uz",r:1,d:"Investitsiya takliflari, hududiy loyihalar va davlat-xususiy sheriklik ma'lumotlari."},
+    {n:"uztradeinfo.uz",u:"https://uztradeinfo.uz",r:1,s:1,d:"Tovar eksport/importi uchun kerakli hujjat, organ, sertifikat va jarayon bosqichlari ketma-ket."},
+  ]},
+  { id:"ilm", icon:"🔬", title:"Ilm-fan, doktorantura va attestatsiya", sites:[
+    {n:"daraja.ilmiy.uz",u:"https://daraja.ilmiy.uz",r:1,s:1,d:"PhD/DSc doktorantura va mustaqil izlanuvchilik — hujjat topshirish, ilmiy mavzular va qabul."},
+    {n:"oak.uz",u:"https://oak.uz",r:1,d:"Oliy attestatsiya komissiyasi — ilmiy daraja/unvon, dissertatsiya himoyalari va kengashlar."},
+  ]},
+  { id:"qishloq", icon:"🌾", title:"Qishloq xo'jaligi va fermer xizmatlari", sites:[
+    {n:"Agrosanoat xizmatlari",u:"https://gov.uz/oz/agrosanoat",r:1,s:1,d:"AGROPLATFORMA, AGROSUBSIDIYA, E-IJARA, REAGRO, CropAgro va geoaxborot tizimiga kirish nuqtasi."},
+  ]},
+  { id:"til", icon:"✍️", title:"O'zbek tili va matn tekshiruvi", sites:[
+    {n:"imlo.uz",u:"https://imlo.uz",r:0,s:1,d:"So'zlarning lotin va kirilldagi to'g'ri yozilishi — 87 mingdan ortiq so'zli imlo lug'ati."},
+    {n:"izoh.uz",u:"https://izoh.uz",r:0,d:"O'zbek tilidagi so'zlar ma'nosi, iboralar va qo'llanish misollari (izohli lug'at)."},
+    {n:"savodxon.uz",u:"https://savodxon.uz",r:0,d:"Imlo, izohli lug'at va savodxonlik vositalari."},
+    {n:"tilmoch.ai",u:"https://tilmoch.ai",r:0,s:1,d:"Tahrirchi — o'zbekcha matndagi imlo, grammatika va uslub xatolarini topadigan AI vosita."},
+  ]},
+];
+
+const ACCENTS=["#38bdf8","#34d399","#fb7185","#a78bfa","#fbbf24","#f472b6","#2dd4bf","#60a5fa","#c084fc","#4ade80","#fb923c","#22d3ee","#818cf8","#f87171","#a3e635","#e879f9","#fcd34d"];
+function hostOf(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(e){return u}}
+
+function cardHTML(site,accent){
+  const host=hostOf(site.u);
+  const letter=(site.n[0]||'?').toUpperCase();
+  const fav=`https://www.google.com/s2/favicons?domain=${host}&sz=64`;
+  const text=(site.n+' '+host+' '+site.d).toLowerCase();
+  const badges=site.r
+    ? '<span class="badge b-ok">Rasmiy</span>'
+    : '<span class="badge b-priv">Xususiy</span>';
+  const star=site.s?'<span class="badge b-star">⭐ Tavsiya</span>':'';
+  return `<a class="card" style="--accent:${accent}" href="${site.u}" target="_blank" rel="noopener"
+      data-type="${site.r?'rasmiy':'xususiy'}" data-star="${site.s?1:0}" data-text="${text.replace(/"/g,'')}">
+    <span class="card-head">
+      <span class="fav"><span>${letter}</span><img src="${fav}" alt="" loading="lazy" onerror="this.remove()"></span>
+      <span class="badges">${badges}${star}</span>
+    </span>
+    <span class="card-name">${site.n}</span>
+    <span class="card-host">${host}<span class="ext">↗</span></span>
+    <span class="card-desc">${site.d}</span>
+  </a>`;
+}
+
+const sideEl=document.getElementById('catList');
+const content=document.getElementById('content');
+const panelHead=document.getElementById('panelHead');
+const emptyEl=document.getElementById('empty');
+const typeFilter=document.getElementById('typeFilter');
+const META=CATS.map((c,i)=>({c,accent:ACCENTS[i%ACCENTS.length]}));
+const BYID={}; META.forEach(m=>BYID[m.c.id]=m);
+const FEAT_ACCENT='#f4a712';
+
+const CATDESC={
+  davlat:"my.gov.uz, OneID, statistika va asosiy davlat portallari",
+  qonun:"Qonunlar, ERI, advokat, notarius va huquqiy hujjatlar",
+  sud:"Sudga murojaat, ish holati, ijro va jarimalar",
+  transport:"Poyezd, samolyot, avtobus chiptalari va marshrutlar",
+  soliq:"Soliq, biznes ro'yxati, litsenziya va bojxona",
+  xarid:"Davlat xaridlari, tenderlar va auksionlar",
+  kadastr:"Ko'chmas mulk reestri, kadastr va uy-joy",
+  bank:"Markaziy bank, valyuta kursi va kredit tarixi",
+  ish:"Vakansiyalar, mehnat daftarchasi va ish topish",
+  talim:"Maktab, universitet, HEMIS, diplom va qabul",
+  kutubxona:"Elektron kutubxonalar va kitoblar",
+  tibbiyot:"DMED, dorilar, klinikalar va ijtimoiy himoya",
+  kommunal:"Elektr, gaz, suv va uy-joy kommunal xizmatlari",
+  aloqa:"IMEI, pochta, internet va kiberxavfsizlik",
+  sayohat:"Turizm, viza, chiptalar va xaritalar",
+  obhavo:"Ob-havo, xaritalar va tashkilot qidirish",
+  yangilik:"Ishonchli yangilik va tahlil saytlari",
+  ijtimoiy:"Baraka karta, mahalla, yoshlar va nafaqa",
+  migratsiya:"Xorijda ish, konsullik va migratsiya",
+  biznestek:"Korxona tekshirish, investitsiya va tashqi savdo",
+  ilm:"Doktorantura (PhD/DSc) va ilmiy attestatsiya",
+  qishloq:"Fermer, subsidiya, ijara va agro xizmatlar",
+  til:"Imlo, izohli lug'at va matn tekshiruvi"
+};
+
+let view='home', activeCat=null, curType='all', curQuery='';
+
+function featuredList(){
+  const seen=new Set(),out=[];
+  META.forEach(m=>m.c.sites.forEach(s=>{ if(s.f){const h=hostOf(s.u); if(!seen.has(h)){seen.add(h);out.push({s,accent:m.accent});}}}));
+  return out;
+}
+
+function buildDrawer(){
+  let html='<button class="cat-item" data-cat="__home" style="--accent:#5b8cff"><span class="ci-ico">🗂️</span><span class="ci-name">Barcha bo\'limlar</span></button>';
+  html+='<button class="cat-item" data-cat="__featured" style="--accent:'+FEAT_ACCENT+'"><span class="ci-ico">⭐</span><span class="ci-name">Tezkor kirish</span><span class="ci-count">'+featuredList().length+'</span></button>';
+  META.forEach(m=>{ html+='<button class="cat-item" data-cat="'+m.c.id+'" style="--accent:'+m.accent+'"><span class="ci-ico">'+m.c.icon+'</span><span class="ci-name">'+m.c.title+'</span><span class="ci-count">'+m.c.sites.length+'</span></button>'; });
+  sideEl.innerHTML=html;
+}
+function setDrawerActive(key){ sideEl.querySelectorAll('.cat-item').forEach(b=>b.classList.toggle('active',b.dataset.cat===key)); }
+
+function ccardHTML(key,icon,accent,name,desc,count,extra){
+  return '<button class="ccard '+(extra||'')+'" data-cat="'+key+'" style="--accent:'+accent+'">'
+    +'<span class="cc-ico">'+icon+'</span><span class="cc-name">'+name+'</span><span class="cc-desc">'+desc+'</span>'
+    +'<span class="cc-foot"><span class="cc-count">'+count+' ta sayt</span><span class="cc-arrow">→</span></span></button>';
+}
+
+function applyType(){
+  let any=false;
+  content.querySelectorAll('.card').forEach(card=>{
+    const t=card.dataset.type,isStar=card.dataset.star==='1';
+    let ok=true;
+    if(curType==='rasmiy')ok=t==='rasmiy';
+    else if(curType==='xususiy')ok=t==='xususiy';
+    else if(curType==='star')ok=isStar;
+    card.style.display=ok?'':'none'; if(ok)any=true;
+  });
+  emptyEl.style.display=any?'none':'block';
+}
+
+function revealCards(sel){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  const cards=content.querySelectorAll(sel);
+  cards.forEach((c,i)=>{c.classList.add('cloak');c.dataset.i=i%9;});
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const el=e.target;el.style.animationDelay=(el.dataset.i*0.04)+'s';el.classList.remove('cloak');el.classList.add('in');io.unobserve(el);}});},{rootMargin:'0px 0px -4% 0px'});
+  cards.forEach(c=>io.observe(c));
+}
+
+function scrollToCatalog(force){
+  const app=document.getElementById('catalog');
+  const top=app.getBoundingClientRect().top+window.scrollY-66;
+  if(force||window.scrollY>top+6) window.scrollTo({top:Math.max(0,top),behavior:'smooth'});
+}
+
+function renderHome(scroll){
+  view='home'; activeCat=null; curQuery='';
+  const si=document.getElementById('search'); if(si&&si.value){si.value='';document.getElementById('clearS').style.display='none';}
+  typeFilter.style.display='none';
+  panelHead.innerHTML='<span class="panel-ico" style="--accent:#5b8cff">🗂️</span><div class="panel-meta"><h2>Barcha bo\'limlar</h2><span class="panel-sub">'+CATS.length+' yo\'nalish · '+totalSites+' sayt</span></div>';
+  let cards=ccardHTML('__featured','⭐',FEAT_ACCENT,'Tezkor kirish','Eng ko\'p kerak bo\'ladigan portallar — bir bosishda',featuredList().length,'feat');
+  META.forEach(m=>{ cards+=ccardHTML(m.c.id,m.c.icon,m.accent,m.c.title,CATDESC[m.c.id]||'',m.c.sites.length); });
+  content.innerHTML='<div class="cc-grid">'+cards+'</div>';
+  setDrawerActive('__home');
+  revealCards('.ccard');
+  if(scroll) scrollToCatalog(true);
+}
+
+function showCategory(key,scroll){
+  view='category'; activeCat=key; curQuery='';
+  const si=document.getElementById('search'); if(si&&si.value){si.value='';document.getElementById('clearS').style.display='none';}
+  typeFilter.style.display='';
+  let list,title,icon,accent,sub;
+  if(key==='__featured'){ list=featuredList(); title='Tezkor kirish'; icon='⭐'; accent=FEAT_ACCENT; sub=list.length+' ta portal'; }
+  else { const m=BYID[key]; list=m.c.sites.map(s=>({s,accent:m.accent})); title=m.c.title; icon=m.c.icon; accent=m.accent; sub=m.c.sites.length+' ta sayt'; }
+  content.style.setProperty('--accent',accent);
+  panelHead.innerHTML='<button class="back-btn" data-home="1">← Bo\'limlar</button><span class="panel-ico" style="--accent:'+accent+'">'+icon+'</span><div class="panel-meta"><h2>'+title+'</h2><span class="panel-sub">'+sub+'</span></div>';
+  content.innerHTML='<div class="grid">'+list.map(o=>cardHTML(o.s,o.accent)).join('')+'</div>';
+  applyType();
+  setDrawerActive(key);
+  revealCards('.card');
+  if(scroll) scrollToCatalog(true);
+}
+
+function showSearch(q){
+  view='search'; curQuery=q; const ql=q.trim().toLowerCase();
+  typeFilter.style.display='';
+  const seen=new Set(),list=[];
+  META.forEach(m=>m.c.sites.forEach(s=>{
+    const txt=(s.n+' '+hostOf(s.u)+' '+s.d).toLowerCase();
+    if(txt.indexOf(ql)>-1){const h=hostOf(s.u); if(!seen.has(h)){seen.add(h);list.push({s,accent:m.accent});}}
+  }));
+  content.style.setProperty('--accent','#5b8cff');
+  panelHead.innerHTML='<button class="back-btn" data-home="1">← Bo\'limlar</button><span class="panel-ico" style="--accent:#5b8cff">🔍</span><div class="panel-meta"><h2>Qidiruv natijalari</h2><span class="panel-sub">“'+q+'” — '+list.length+' ta natija</span></div>';
+  content.innerHTML='<div class="grid">'+list.map(o=>cardHTML(o.s,o.accent)).join('')+'</div>';
+  applyType();
+  setDrawerActive(null);
+}
+
+function setStat(id,to){
+  const el=document.getElementById(id); if(!el)return;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){el.textContent=to;return;}
+  const t0=performance.now(),dur=1300;
+  (function step(now){const p=Math.min(1,(now-t0)/dur);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step);})(t0);
+}
+
+const totalSites=CATS.reduce((a,c)=>a+c.sites.length,0);
+const totalStar=CATS.reduce((a,c)=>a+c.sites.filter(s=>s.s).length,0);
+buildDrawer();
+setStat('stSites',totalSites); setStat('stCats',CATS.length); setStat('stStar',totalStar);
+document.getElementById('pillCount').textContent=totalSites+'+';
+renderHome(false);
+
+content.addEventListener('click',e=>{ const cc=e.target.closest('.ccard'); if(cc){showCategory(cc.dataset.cat,true);} });
+panelHead.addEventListener('click',e=>{ if(e.target.closest('.back-btn')) renderHome(true); });
+
+const drawer=document.getElementById('drawer'), menuBtn=document.getElementById('menuBtn'), drawerClose=document.getElementById('drawerClose'), backdrop=document.getElementById('drawerBackdrop');
+function openDrawer(){document.body.classList.add('drawer-open');menuBtn.setAttribute('aria-expanded','true');}
+function closeDrawer(){document.body.classList.remove('drawer-open');menuBtn.setAttribute('aria-expanded','false');}
+menuBtn.addEventListener('click',openDrawer);
+drawerClose.addEventListener('click',closeDrawer);
+backdrop.addEventListener('click',closeDrawer);
+sideEl.addEventListener('click',e=>{const b=e.target.closest('.cat-item');if(!b)return;const k=b.dataset.cat;closeDrawer();if(k==='__home')renderHome(true);else showCategory(k,true);});
+
+typeFilter.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;typeFilter.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');curType=b.dataset.type;applyType();});
+
+const search=document.getElementById('search'),clearS=document.getElementById('clearS');
+search.addEventListener('input',()=>{const v=search.value;clearS.style.display=v?'grid':'none'; if(v.trim()){showSearch(v);} else {renderHome(false);} });
+clearS.addEventListener('click',()=>{search.value='';clearS.style.display='none';renderHome(false);search.focus();});
+document.querySelectorAll('.suggests button').forEach(b=>b.addEventListener('click',()=>{search.value=b.dataset.q;clearS.style.display='grid';showSearch(b.dataset.q);scrollToCatalog(true);}));
+
+const tb=document.getElementById('themeBtn');
+function setIcon(){tb.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️':'🌙';}
+setIcon();
+tb.addEventListener('click',()=>{const dark=document.documentElement.getAttribute('data-theme')==='dark';document.documentElement.setAttribute('data-theme',dark?'light':'dark');localStorage.setItem('fs-theme',dark?'light':'dark');setIcon();});
+
+document.addEventListener('keydown',e=>{
+  if((e.key==='/'||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'))&&document.activeElement!==search){e.preventDefault();search.focus();}
+  if(e.key==='Escape'){ if(document.body.classList.contains('drawer-open'))closeDrawer(); else if(document.activeElement===search)search.blur(); }
+});
+
+document.addEventListener('pointermove',e=>{
+  const card=e.target.closest&&e.target.closest('.card,.ccard'); if(!card)return;
+  const r=card.getBoundingClientRect();
+  card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
+  card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
+},{passive:true});
+</script>
+</body>
+</html>
